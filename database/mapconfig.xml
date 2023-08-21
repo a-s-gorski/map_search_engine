@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm2pgrouting>
+  <configuration>
+    <tag name="highway" id="1">
+      <tag name="residential" id="2">
+        <tag name="name" id="3" />
+        <tag name="addr:city" id="4" />
+        <tag name="addr:street" id="5" />
+        <tag name="addr:housenumber" id="6" />
+      </tag>
+      <tag name="tertiary" id="7">
+        <tag name="name" id="8" />
+        <tag name="addr:city" id="9" />
+        <tag name="addr:street" id="10" />
+        <tag name="addr:housenumber" id="11" />
+      </tag>
+    </tag>
+  </configuration>
+</osm2pgrouting>

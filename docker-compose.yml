@@ -1,0 +1,33 @@
+version: '3'
+services:
+  db:
+    container_name: db
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    env_file: ./database/.env
+    ports:
+      - "5433:5432"
+    mem_limit: 8g
+  api:
+    container_name: api
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file: ./backend/.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  frontend_streamlit:
+    container_name: frontend_steamlit
+    build:
+      context: ./frontend_streamlit
+      dockerfile: Dockerfile
+    env_file: ./frontend_streamlit/.env
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+      - api
+      

@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Adam Górski <adamsebastiangorski@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.95.1"
+GeoAlchemy2 = "^0.13.2"
+SQLAlchemy = "^2.0.12"
+python-dotenv = "^1.0.0"
+psycopg2-binary = "^2.9.6"
+uvicorn = "^0.22.0"
+autopep8 = "^2.0.2"
+isort = "^5.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
